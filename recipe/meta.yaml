@@ -18,7 +18,7 @@ requirements:
     - pip
     - setuptools
   run:
-    - python >={{ python_min }}
+    - python
     - sh  # [not win]
 
 
