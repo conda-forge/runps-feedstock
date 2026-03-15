@@ -9,10 +9,6 @@ source:
   sha256: 2d8bc61a245bca605f6c9ee2030846d53c51478528222b92993802b309676b53
 
 build:
-  script: >-
-    if [[ "${CONDA_BUILD_CROSS_COMPILATION:-}" == "1" ]]; then
-    $BUILD_PREFIX/bin/python -m pip install . --no-deps --no-build-isolation -vv --prefix $PREFIX;
-    else $PYTHON -m pip install . --no-deps --no-build-isolation -vv; fi
   number: 4
 
 requirements:
