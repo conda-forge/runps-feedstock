@@ -1,4 +1,4 @@
-{% set version = "4.1.1" %}
+{% set version = "4.1.2" %}
 
 package:
   name: runps
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/r/runps/runps-{{ version }}.tar.gz
-  sha256: 2d8bc61a245bca605f6c9ee2030846d53c51478528222b92993802b309676b53
+  sha256: c51854f0de90740939688ac79fb0b6897328514c2297fbd1a215cd39fd0d7424
 
 build:
-  number: 5
+  number: 0
 
 requirements:
   build:
