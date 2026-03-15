@@ -9,7 +9,7 @@ source:
   sha256: 2d8bc61a245bca605f6c9ee2030846d53c51478528222b92993802b309676b53
 
 build:
-  number: 4
+  number: 5
 
 requirements:
   build:
@@ -27,12 +27,11 @@ requirements:
 
 test:
   imports:
-    - runps
+    - runps    # [build_platform == target_platform]
   requires:
-    - python {{ python_min }}
-    - pip
+    - pip      # [build_platform == target_platform]
   commands:
-    - pip check
+    - pip check  # [build_platform == target_platform]
 
 about:
   home: https://github.com/xapple/runps/
