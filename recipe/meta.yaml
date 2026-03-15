@@ -13,6 +13,8 @@ build:
   number: 1
 
 requirements:
+  build:
+    - cross-python_{{ target_platform }}  # [build_platform != target_platform]
   host:
     - python {{ python_min }}
     - pip
@@ -33,7 +35,7 @@ test:
 
 about:
   home: https://github.com/xapple/runps/
-  summary: 'A small python utility for launching external processes easily..'
+  summary: "A small python utility for launching external processes easily.."
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
