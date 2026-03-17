@@ -297,6 +297,3 @@ Feedstock Maintainers
 
 * [@xapple](https://github.com/xapple/)
 
-
-<!-- dummy commit to enable rerendering -->
-
