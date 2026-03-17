@@ -9,7 +9,7 @@ source:
   sha256: c51854f0de90740939688ac79fb0b6897328514c2297fbd1a215cd39fd0d7424
 
 build:
-  number: 1
+  number: 2
 
 requirements:
   build:
@@ -17,7 +17,7 @@ requirements:
     - pip         # [build_platform != target_platform]
     - setuptools  # [build_platform != target_platform]
   host:
-    - python {{ python_min }}
+    - python
     - pip
     - setuptools
   run:
